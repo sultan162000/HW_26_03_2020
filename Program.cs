@@ -107,9 +107,9 @@ namespace HW_26_03
             Console.Write($"Ваша покупка: {basket}\nВаш баланс {userBalance}");
             */
 
-            ///////////////Задание 2
+            /////////////// Задание 2
             
-            double userBalance = 54;
+            double userBalance = 666;
             double disc = 0;
             if(userBalance >= 500 && userBalance < 1000)
             disc = userBalance * 3 / 100;
@@ -118,6 +118,19 @@ namespace HW_26_03
             else Console.WriteLine("В вашей сумме не полагается скидка.");
 
             Console.WriteLine($"Ваша скидка {disc}");
+            /////////////////////////////
+            //////////////// Задача 3
+            int a = 66, b = 84, c = 15, d = 43;
+            int min = a;
+
+            if(a==b&&a==c&&a==d)Console.WriteLine(a*b*c*d);
+            else if(a<b&&b<c&&c<d)Console.WriteLine("Числа расположены по возрастанию");
+            else{
+                if(b<min)min = b;
+                if(c<min)min = c;
+                if(d<min)min = d;
+                Console.WriteLine($"Мин. число: {min}");
+            }
 
 
             Console.ReadKey();
