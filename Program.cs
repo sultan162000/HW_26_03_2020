@@ -135,16 +135,23 @@ namespace HW_26_03
             /////////////Задача 4
             int a1 = 5, b1 = 10, c1 =15;
             int max = a1, min1 = a1;
+            int mid = a1;
 
             if(b1>max)max = b1;
             if(c1>max)max = c1;
-            if(b1<min)min = b1;
-            if(c1<min)min = c1;
+
+            if(b1<min1)min1 = b1;
+            if(c1<min1)min1 = c1;
+
+            if(a1!=max&&a1!=min1)mid = a1;
+            if(b1!=max&&b1!=min1)mid = b1;
+            if(c1!=max&&c1!=min1)mid = c1;
 
 
             a1 = max;
-            c1 = min;
-            Console.WriteLine(a1+""+b1+""+c1);
+            b1 = mid;
+            c1 = min1;
+            Console.WriteLine(a1+" "+b1+" "+c1);
 
 
             Console.ReadKey();
