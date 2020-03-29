@@ -117,7 +117,7 @@ namespace HW_26_03
             disc = userBalance * 5 /100;
             else Console.WriteLine("В вашей сумме не полагается скидка.");
 
-            Console.WriteLine($"Ваша скидка {disc}");
+            Console.WriteLine($"Ваша сумма с учетом скидки {userBalance-disc}");
             /////////////////////////////
             //////////////// Задача 3
             int a = 66, b = 84, c = 15, d = 43;
